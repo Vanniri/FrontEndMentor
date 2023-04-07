@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+  }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"CustomFont",sans-serif ;
+
+}
+
+
+  
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    
+}
+.all {
+    display: flex;
+    max-width: 550px;
+    min-width: 300px;
+    min-height: 400px;
+    /* background-color: rgb(237, 237, 237); */
+    -webkit-box-shadow: 14px 17px 100px -78px rgba(0, 0, 0, 1);
+-moz-box-shadow: 14px 17px 100px -78px rgba(0, 0, 0, 1);
+box-shadow: 14px 17px 100px -78px rgba(0, 0, 0, 1);
+border-radius:30px ;
+
+}
+
+.result{
+    color: white;
+    display: grid;
+    justify-items: center;
+    background: rgb(57,0,255);
+background: linear-gradient(0deg, rgba(57,0,255,1) 0%, rgba(99,85,255,1) 100%);
+    text-align: center;
+    padding:10px 30px;
+    border-radius: 20px;
+  width: 50%;
+
+}
+.result p {
+    color: rgb(214, 214, 214);
+    padding: 20px;
+    font-size:  1em;
+    font-weight: 600;
+}
+.digitScore {
+    color: white;
+    display: grid;
+    justify-content: space-around;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: rgb(72,24,238);
+background: linear-gradient(0deg, rgba(74,56,255,1) 0%, rgba(47,34,187,1) 100%);
+padding: 20px;
+justify-items: center;
+
+}
+#score {
+    color: white;
+    font-size: 3em;
+    padding: 0;
+    font-weight: 800;
+    margin-top: 20px;
+}
+#scoreOf {
+    font-size: 0.7em;
+    color: rgb(209, 209, 209);
+}
+
+.mark{
+    margin :10px 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.rating {
+    color: rgb(209, 209, 209);
+    margin :20px ;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.right {
+    display: grid;
+   width: 50%;
+   justify-items: center;
+   align-items: center;
+   align-content: space-evenly;
+    
+}
+.summary {
+    width: 80%;
+    font-weight: 800;
+}
+
+.reaction {
+    display: flex;
+    border-radius: 10px ;
+    width: 80%;
+    height: 45px;
+    background-color: rgb(252, 237, 237);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+
+}
+.memory{
+
+    display: flex;
+    border-radius: 10px ;
+    width: 80%;
+    height: 45px;
+    background-color: rgb(252, 255, 234);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+
+}
+
+.secondSpan{
+    margin-right: 20px;
+}
+
+.spanResult {
+    font-weight: bold;
+ 
+}
+
+button {
+color: white;
+border-radius: 20px;
+ background: rgb(59,20,207);
+background: linear-gradient(0deg, rgba(59,20,207,1) 34%, rgba(96,44,222,1) 63%, rgba(110,49,255,1) 89%);
+height: 40px;
+border: none;
+width: 100%;
+
+}
+.imgAndFS {
+    color:rgb(238, 69, 69) ;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.imgAndFS img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#memo {
+    color: rgb(202, 230, 22);
+    font-weight: 600;
+}
+.verbal{
+        display: flex;
+        border-radius: 10px ;
+        width: 80%;
+        height: 45px;
+        background-color: rgb(219, 247, 224);
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.8em;
+    
+    
+}
+#verb {
+    color: rgb(24, 149, 68);
+    font-weight: 600;
+}
+.visual{
+    display: flex;
+    border-radius: 10px ;
+    width: 80%;
+    height: 45px;
+    background-color: rgb(220, 219, 247);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+#vis {
+    color: rgb(43, 43, 201);
+    font-weight: 600;
+}
+.continue {
+    width: 80%;
+}
+button:hover {
+background: rgb(17, 17, 105);
+cursor: pointer;
+}
+
+@media (max-width: 420px) {
+.all{
+flex-direction: column;
+align-items: center;
+min-width: 250px;
+max-width: 400px;
+
+}
+.container{
+ 
+}
+.result{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.right {
+    width: 100%;
+}
+.reaction{
+    margin-bottom:15px ;
+    margin-top: 15px;
+}
+.memory{
+    margin-bottom: 15px;
+}
+.verbal{
+    margin-bottom: 15px;
+}
+.visual{
+    margin-bottom: 15px;
+
+}
+.digitScore{
+    width: 130px;
+    height: 130px;
+  
+}
+#score {
+    font-size: 2em;
+    margin-top: 20px;
+}
+}
